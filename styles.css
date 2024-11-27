@@ -1,0 +1,79 @@
+/* Estils generals per a tot el cos de la pàgina */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E8F5E9; /* Fons de color suau */
+}
+
+/* Contenidor centralitzat */
+.contenidor {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1000px;
+}
+
+/* Tauler de tasques */
+.tauler {
+    width: 45%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Tauler de PENDENTS */
+.PENDENTS {
+    border-left: 4px solid #66BB6A; /* Verd suau */
+}
+
+/* Tauler de FETES */
+.FETES {
+    border-left: 4px solid #FF7043; /* Taronja suau */
+}
+
+/* Títols de taulers */
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Estils per a les tasques */
+.tasca {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Efecte de "hover" sobre les tasques */
+.tasca:hover {
+    background-color: #f1f1f1;
+    transform: translateX(10px); /* Moure lleugerament la tasca */
+}
+
+/* Estils per a tasques completades */
+.tasca.completed {
+    background-color: #C8E6C9; /* Verd suau */
+    color: #388E3C;
+    text-decoration: line-through;
+    cursor: default;
+}
+

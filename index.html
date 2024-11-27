@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tauler de Tasques - Grau DAM</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enllaç a l'arxiu CSS extern -->
+</head>
+<body>
+
+<div class="contenidor">
+    <!-- Tauler de Tasques Pendents -->
+    <div class="tauler PENDENTS">
+        <h2>Pendents</h2>
+        <div class="tasca" onclick="moureTasques(this)">Crear esquema de l'aplicació</div>
+        <div class="tasca" onclick="moureTasques(this)">Dissenyar la interfície d'usuari</div>
+        <div class="tasca" onclick="moureTasques(this)">Programar la lògica de l'aplicació</div>
+        <div class="tasca" onclick="moureTasques(this)">Provar l'aplicació en diferents dispositius</div>
+        <div class="tasca" onclick="moureTasques(this)">Optimitzar el rendiment de l'aplicació</div>
+        <div class="tasca" onclick="moureTasques(this)">Revisar seguretat de l'aplicació</div>
+    </div>
+
+    <!-- Tauler de Tasques Completes -->
+    <div class="tauler FETES">
+        <h2>Fetes</h2>
+        <div class="tasca completed" onclick="moureTasques(this)">Documentar el projecte</div>
+        <div class="tasca completed" onclick="moureTasques(this)">Desplegar l'aplicació al servidor</div>
+    </div>
+</div>
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
